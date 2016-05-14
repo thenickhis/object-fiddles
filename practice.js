@@ -171,8 +171,8 @@ var user1 = {
 that each value is truthy. If it's not truthy, remove it from the object. */
 
   //Code Here
-for (i in user1) {
-  if (i!=true)
+for (var i in user1) {
+  if (!i)
     delete i;
 }
 //Once you get your truthy Object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
@@ -245,12 +245,12 @@ methodCollection.logHello();
 
   //Code Here
 function makePerson(name,birthday,ssn) {
-  return var person = {
+  return {
     name: name,
     birthday: birthday,
     ssn: ssn
   };
-};
+}
 
 
 //NEXT PROBLEM
@@ -261,12 +261,12 @@ function makePerson(name,birthday,ssn) {
 
   //Code Here
 function makeCard(cardNumber,expirationDate,securityCode) {
-  return var card = {
+  return {
     cardNumber: cardNumber,
     expirationDate: expirationDate,
     securityCode: securityCode
   };
-};
+}
 
 
 //NEXT PROBLEM
